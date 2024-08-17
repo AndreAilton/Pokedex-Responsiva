@@ -5,7 +5,10 @@
 }
 
 
-
+header {
+  position: fixed;
+  width: 100%;
+}
 
 .navbar {
     background-color:#D30A40;
@@ -14,7 +17,6 @@
 
     
 }
-
 
 .Buttondex {
   position:relative;
@@ -144,5 +146,102 @@
     min-width: 25px;
 }
 
-/* Borda NavBar */
+/* List Pokemon */
+
+.Containerdex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.ViewPokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+  background-color: #da184b;;
+  width: 500px;
+  height: 100%;
+}
+
+.display {
+  border: 20px solid rgb(233, 227, 227);
+  width: 300px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.808);
+  margin-bottom: 5rem;
+}
+
+.SearchP {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.dpad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.dpad-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dpad-up {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.dpad-left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.dpad-center {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #555;
+    cursor: default;
+}
+
+.dpad-right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.dpad-down {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.Search {
+  border-radius: 50%;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+}
+
+.SearchP input  {
+  background-color: #64AB35;
+}
+
+.ListPokemon {
+  background-color: #0EBDD2;
+  width: 500px;
+}
+
+
+
+/* View Pokemon */
 
