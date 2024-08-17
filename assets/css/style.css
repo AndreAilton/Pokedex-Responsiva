@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbar {
+    background-color:#D30A40 ;
+
+
+}
+
+.Buttondex {
+    margin: 0rem 10%;
+    padding: 0.5rem;
+    gap: 10px;
+    display: flex;
+    width: 50%;
+    
+    
+}
+
+.circle {
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    
+}
+
+
+/* Botão Azul Maior */
+
+.BodyB {
+    background-color: white;
+    border: solid 2px black;
+    height: 70px;
+    width:70px;
+    min-width: 70px;
+
+}
+
+.blue {
+
+    border: solid 2px black;
+    background-color: #0FEBF7;
+    transform: translate(17%,5%);
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+}
+
+.shadow {
+    position: relative;
+    background-color: #0EBDD2;
+    border: none;
+    scale: 125%;
+    transform: translate(14%,19%);
+    opacity: 80%;
+    height: 80%;
+    width: 80%;
+}
+
+.shadow::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    scale: 110%;
+    background-color: #0FEBF7;
+    border-radius: 50%;
+    transform: translate(35%,0%);
+
+}
+
+.light {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    scale: 0.5;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(80%,-40%);
+    opacity: 80%;
+}
+
+
+
+/* Botões pequenos */
+
+.lighter {
+    width: 50%;
+    height: 50%;
+    background-color: inherit;
+    filter: brightness(130%);
+    transform: translate(10%,30%);
+}
+
+
+.red {
+    background-color:  #A70410;
+    border: solid 1.2px black;
+    
+}
+.yellow {
+    background-color: #8B983C;
+    border: solid 1.2px black;
+}
+.green {
+    background-color: #64AB35;
+    border: solid 1.2px black;
+}
+
+.small {
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+}
+
+/* Borda NavBar */
+
+.navbar {
+    border: 100px 100px solid black;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 15px 10px 0 0 #8F0529; /* Movendo a "borda" para a direita e para baixo */
+
+    
+}
+
