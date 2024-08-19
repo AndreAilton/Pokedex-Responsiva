@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+
+}
+body {
+    background-color: #da184b;;
 }
 
 
 header {
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 
 .navbar {
@@ -150,6 +156,7 @@ header {
 
 .Containerdex {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
@@ -162,15 +169,17 @@ header {
   align-items: center;
   padding-top: 11rem;
   background-color: #da184b;;
-  width: 500px;
-  height: 100%;
+    border: 1px solid black;
+    width: 100%;
+    max-width: 650px;
+
 }
 
 .container-display {
     display: flex;
     flex-direction: column;
     width:80%;
-    height: 250px;
+    height: 300px;
 }
 
 .display {
@@ -193,6 +202,7 @@ header {
 .Borderdisplay {
     display: flex;
     width: 100%;
+
 
 }
 .BoxD {
@@ -234,52 +244,48 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-}
-.dpad {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 120px;
-    height: 120px;
-    position: relative;
+  margin-top: 2rem;
 }
 
-.dpad-button {
+.d-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    transform: scale(0.6);
+
+}
+
+.d-pad div {
+    background: black;
+    border: 5px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
-.dpad-up {
-    grid-column: 2;
-    grid-row: 1;
+.d-pad div:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.dpad-left {
-    grid-column: 1;
-    grid-row: 2;
+/* Cores das setas */
+.up    { grid-area: 1 / 2 / 2 / 3; background: #666; }
+.left  { grid-area: 2 / 1 / 3 / 2; background: #777; }
+.right { grid-area: 2 / 3 / 3 / 4; background: #777; }
+.down  { grid-area: 3 / 2 / 4 / 3; background: #666; }
+
+/* Botão central */
+.center {
+    grid-area: 2 / 2 / 3 / 3;
+    background: #888;
 }
 
-.dpad-center {
-    grid-column: 2;
-    grid-row: 2;
-    background-color: #555;
-    cursor: default;
-}
-
-.dpad-right {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.dpad-down {
-    grid-column: 2;
-    grid-row: 3;
-}
 
 .Search {
   border-radius: 50%;
@@ -289,7 +295,20 @@ header {
 }
 
 .SearchP input  {
-  background-color: #64AB35;
+  background-color: #7ff332;
+  font-family: "Pixelify Sans";
+  font-weight: bold;
+  font-size: 1rem;
+  height: 50%;
+  color: black;
+}
+.SearchP input:focus  {
+    border: black;
+    outline: black;
+  }
+
+.SearchP input::placeholder  {
+text-align: center;
 }
 
 .ListPokemon {
@@ -298,6 +317,26 @@ header {
 }
 
 
+.flipdex {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #8F0529, #b41640);
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 2%;
 
+    min-width: 50px;
+}
+
+.b-flip {
+    margin-top: 5rem;
+    background-color: #8F0529;
+    height: 10px;
+    width: 50px;
+    border-top: 1px solid black;
+    border-radius: 50%;
+    z-index: 6;
+
+}
 /* View Pokemon */
 
