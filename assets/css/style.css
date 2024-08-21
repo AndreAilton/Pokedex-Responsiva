@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
 
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Pixelify Sans";
 
 }
 body {
     background-color: #da184b;
+}
+
+li {
+    all: unset;
 }
 
 
@@ -233,14 +243,25 @@ header {
     margin-top: 0.5rem;
 }
 .display-lcd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     margin-top: 1.6rem;
     border-radius: 20px;
     width: 90%;
     height: 100%;
-    background-color: black;
+    background-image: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/204364595/original/86db6005cd51b4f60e71cca277f603a82cf5646a/draw-a-pixel-pokemon-battle-background.png);
+
+    background-position: 50%;
+    object-fit: cover;
     transform: translate(0%,10%);
     z-index: 2;
+}
+
+.display-lcd img{
+    transform: scale(2.0) translate(20%);
+
 }
 
 .SearchP {
@@ -419,14 +440,7 @@ text-align: center;
 
   }
 
-.PokemonB {
-    background-color: blue;
-    width: 220px;
-    height: 80px;
-    border-radius: 50px;
-    border: 1px solid black;
 
-}
 
 .ListPokemon::-webkit-scrollbar {
     display: none;
@@ -448,3 +462,70 @@ text-align: center;
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
   }
+
+.PokemonB {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    width: 220px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid black;
+    overflow: hidden;
+
+}
+.PokemonB h1 {
+    font-size: 140%;
+
+}
+
+.circleP {
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.circleP img {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+
+}
+
+.PokemonN {
+    height: 100%;
+    margin: 0.5rem;
+}
+
+.PokemonN h1 {
+    color: white;
+    border-bottom: 2px solid white;
+
+}
+
+.PokemonT {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 0.5rem;
+
+
+}
+
+
+
+
+.PokemonT h2{
+    border: 1px solid black;
+    filter: brightness(0.9);
+    border-radius: 10px;
+    padding: 4px;
+
+}
+
