@@ -15,6 +15,7 @@ const buttonup = document.querySelector('.up');
 const buttondown = document.querySelector('.down');
 const buttonleft = document.querySelector('.left');
 const buttonright = document.querySelector('.right');
+const buttoncenter = document.querySelector('.center');
 
 let searchPokemon = 1;
 
@@ -121,10 +122,14 @@ buttondown.addEventListener('click', () => {
     }
   });
   
-  buttonup.addEventListener('click', () => {
-    searchPokemon += 10;
-    renderPokemon(searchPokemon);
-  });
+buttonup.addEventListener('click', () => {
+  searchPokemon += 10;
+  renderPokemon(searchPokemon);
+});
+
+buttoncenter.addEventListener('click', () => {
+  window.scrollTo({ top:document.body.scrollHeight, behavior: 'smooth' });
+});
 
 
   function ListButton(){
@@ -138,6 +143,7 @@ buttondown.addEventListener('click', () => {
             console.log(i)
             filhos[i].addEventListener('click', function() {
                 renderPokemon(filhos[i].id)
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         }
     }, 1000);
