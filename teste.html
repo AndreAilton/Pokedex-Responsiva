@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        .filho {
+            padding: 10px;
+            margin: 5px;
+            background-color: lightblue;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="minhaDiv">
+        <div class="filho">Div 1</div>
+        <div class="filho">Div 2</div>
+        <div class="filho">Div 3</div>
+    </div>
+
+    <script>
+        // Seleciona a div principal
+        const minhaDiv = document.getElementById('minhaDiv');
+
+        // Obtém todos os filhos diretos da div principal
+        const filhos = minhaDiv.children;
+
+        // Adiciona um manipulador de eventos a cada filho
+        for (let i = 0; i < filhos.length; i++) {
+            console.log(i)
+            filhos[i].addEventListener('click', function() {
+                alert('Você clicou na ' + filhos[i].textContent);
+            });
+        }
+    </script>
+</body>
+</html>

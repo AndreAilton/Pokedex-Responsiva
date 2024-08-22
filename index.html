@@ -50,21 +50,33 @@
                 </div>
 
                 <div class="display-lcd">
-                <div class="Pokemon-selected">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/25.gif" alt="">
-                </div>
+                    <div class="Pokemon-selected">
+                        <img class="Pokemon__image" src="" alt="">
+                    </div>
+
+                    <h1 class="pokemon__data">
+                        <span class="pokemon__number"></span> -
+                        <span class="pokemon__name"></span>
+                    </h1>
+
                 </div>
             </div>
 
             <div class="Borderdisplay">
+
                 <div class="BordD"></div>
                 <div class="BoxD"></div>
             </div>
         </div>
 
-        <div class="SearchP">
-          <button class="Search"></button>
-          <input type="text" placeholder="Insira o Nome ou id" >
+        <form class="SearchP">
+          <button class="Search" type="submit"></button>
+            <input
+            type="search"
+            class="input__search"
+            placeholder="Name or Number"
+            required
+            />
 
           <div class="d-pad">
                 <div class="up">↑</div>
@@ -74,7 +86,7 @@
                 <div class="down">↓</div>
          </div>
           
-        </div>
+        </form>
 
 
       </div>
@@ -86,10 +98,10 @@
       </div>
 
       <div class="ViewPokemon2">
-        <ul id="ListPokemon" class="ListPokemon">
+        <div id="ListPokemon" class="ListPokemon">
             <!-- Insira Pokemon Classe PokemonB -->
-
-        </ul>
+            <!-- <div class="PokemonB"></div> -->
+        </div>
         
         <Button id="PokemonLoad" class="PokemonLoad">
             Carregar 
