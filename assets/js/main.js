@@ -140,7 +140,7 @@ buttondown.addEventListener('click', () => {
                 renderPokemon(filhos[i].id)
             });
         }
-    }, 500);
+    }, 1000);
     
     }
 
