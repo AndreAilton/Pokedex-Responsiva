@@ -178,6 +178,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 2px solid #000;
   padding-top: 11rem;
   background-color: #da184b;;
     width: 100%;
