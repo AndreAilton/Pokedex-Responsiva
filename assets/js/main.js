@@ -64,6 +64,7 @@ LoadButton.addEventListener('click',() => {
 
 if (offset == 0 ) {
     loadPokemon()
+    ListButton()
 }
 
 const fetchPokemon = async (pokemon) => {
