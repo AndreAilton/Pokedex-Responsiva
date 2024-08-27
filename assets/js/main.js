@@ -138,10 +138,10 @@ buttoncenter.addEventListener('click', () => {
         // Seu código para buscar os itens
         const List = document.querySelector('.ListPokemon');
         const filhos = List.children;
-        console.log(List)
+        // console.log(List)
     
         for (let i = 0; i < filhos.length; i++) {
-            console.log(i)
+           // console.log(i)
             filhos[i].addEventListener('click', function() {
                 renderPokemon(filhos[i].id)
                 window.scrollTo({ top: 0, behavior: 'smooth' });
